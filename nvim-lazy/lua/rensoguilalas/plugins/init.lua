@@ -1,3 +1,3 @@
 return {
-    "christoomey/vim-tmux-navigator", -- tmux & split window navigator
+    "christoomey/vim-tmux-navigator", -- tmux & split window navigation
 }

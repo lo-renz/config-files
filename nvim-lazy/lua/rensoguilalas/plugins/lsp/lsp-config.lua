@@ -70,22 +70,16 @@ return {
       vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
     end
 
-    -- configure ast-grep server
-    lspconfig["ast_grep"].setup({
-        capabtilities = capabilities,
-        on_attach = on_attach,
-    })
-
     -- configure c, c++ server
     lspconfig["clangd"].setup({
-        capabtilities = capabilities,
-        on_attach = on_attach,
+      capabilities = capabilities,
+      on_attach = on_attach,
     })
 
-    -- configure css-lsp server
+    -- configure css server
     lspconfig["cssls"].setup({
-        capabtilities = capabilities,
-        on_attach = on_attach,
+      capabilities = capabilities,
+      on_attach = on_attach,
     })
 
     -- configure haskell server
@@ -102,6 +96,12 @@ return {
 
     -- configure java server
     lspconfig["jdtls"].setup({
+      capabilities = capabilities,
+      on_attach = on_attach,
+    })
+
+    -- configure json server
+    lspconfig["jsonls"].setup({
       capabilities = capabilities,
       on_attach = on_attach,
     })
@@ -145,25 +145,13 @@ return {
       on_attach = on_attach,
     })
 
-    -- configure python server
-    lspconfig["pylsp"].setup({
-      capabilities = capabilities,
-      on_attach = on_attach,
-    })
-
     -- configure sql server
     lspconfig["sqlls"].setup({
       capabilities = capabilities,
       on_attach = on_attach,
     })
 
-    -- configure tailwindcss server
-    lspconfig["tailwindcss"].setup({
-      capabilities = capabilities,
-      on_attach = on_attach,
-    })
-
-    -- configure typescript server
+    -- configure typescript, javascript server
     lspconfig["tsserver"].setup({
       capabilities = capabilities,
       on_attach = on_attach,
