@@ -15,7 +15,7 @@ return {
 			kotlin = { "ktlint" },
 			lua = { "selene" },
 			markdown = { "alex" },
-			python = { "pylint" },
+			--python = { "pylint" },
 			sql = { "sql-formatter" },
 			javascript = { "eslint_d" },
 			typescript = { "eslint_d" },

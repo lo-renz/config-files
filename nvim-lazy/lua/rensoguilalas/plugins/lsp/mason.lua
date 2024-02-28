@@ -27,17 +27,9 @@ return {
 		mason_lspconfig.setup({
 			-- list of servers for mason to install
 			ensure_installed = {
-				"clangd",
-				"cssls",
-				"hls",
-				"html",
 				"jdtls",
 				"jsonls",
-				"kotlin_language_server",
 				"lua_ls",
-				"marksman",
-				"pyright",
-				"sqlls",
 				"tsserver",
 			},
 			-- auto-install configured servers (with lspconfig)
@@ -49,22 +41,17 @@ return {
 				-- formatters
 				"black", -- python formatter
 				"clang-format", -- c, c#, c++, json, java, javasctip formatter
-				"fourmolu", -- haskell formatter
 				"google-java-format", -- java formatter
-				"isort", -- python formatter
 				"ktlint", -- kotlin formatter
 				"prettier", -- prettier formatter
 				"sql-formatter", -- sql formatter
 				"stylua", -- lua formatter
 
 				-- linters
-				"alex", -- markdown linter
 				"selene", -- lua, luau linter
 				"checkstyle", -- java linter
-				"cpplint", -- c, c++ linter
 				"eslint_d", -- typescript, javascript linter
 				"jsonlint", -- json linter
-				"ktlint", -- kotlin linter
 				"markuplint", -- html linter
 				"pylint", -- python linter
 				"stylelint", -- css, sass, scss, less linter
